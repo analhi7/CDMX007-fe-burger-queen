@@ -1,0 +1,14 @@
+.ticket{
+    margin-top: -71%;
+    background-color:#acb8bf;
+    height: 655px;
+    margin-left: 76%;
+    width: 246px;
+    box-shadow: 3px 3px 13px #666;
+    color: white;
+    text-align: center;
+}
+
+p{
+    padding-top: 20%;
+}
