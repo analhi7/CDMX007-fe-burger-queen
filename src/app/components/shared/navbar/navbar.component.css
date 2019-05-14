@@ -16,7 +16,6 @@
     align-items: center;
     text-align: center;
     margin-top: -58%;
-    padding-left: 49px;
 }
 
  .nav-link {
@@ -26,36 +25,26 @@
 
 a {
     color: #707070;
+    
+}
+a:hover:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 1px solid;
+    color:#707070;
+    margin-top:18px;
+  
 }
 
-figure{
-    width: 300px;
-}
 
-figure img{
-    width: 300px;
-    margin-left: 174px;
-    margin-top: -300px;
+.exit{
+    background-image:url('src\assets\img\exit.png');
+    margin-top: 346px;
+    margin-left: 86px;
+    width: 4.4%;
+    height: 6.3%;
     position: absolute;
-}
-
-input {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 17px;
-    border: 1px solid #000000;
-    padding: 0 4px 0 4px;
-    margin-left: 383px;
-    position: fixed;
-    width: 468px;
-    height: 50px;
-    margin-top: -65px;
- }
-
-.nombre{
-    position: fixed;
-    margin-left: 376px;
-    margin-top: -125px;
-    font-size: 1.4em;
-    color: #7dcff1;
+    background-color: #f8d554;
+    border: 0;
 }

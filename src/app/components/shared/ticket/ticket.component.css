@@ -12,3 +12,12 @@
 p{
     padding-top: 20%;
 }
+
+.order-ok{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 800px;
+    margin-top:20px;
+}

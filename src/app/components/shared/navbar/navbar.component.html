@@ -3,25 +3,14 @@
 <div class="navbar-i">
    <div class="nav-nav">
       <nav >
-        <a class="nav-link active" href="#">Desayuno</a>
-        <a class="nav-link" href="#">Hamburguesa</a>
-        <a class="nav-link" href="#">Especificaciones</a>
-       
+        <a class="nav-link active" [routerLink]= "['desayunos']">Desayuno</a>
+        <a class="nav-link" [routerLink]= "['hamburguesas']">Hamburguesa</a>
+        <a class="nav-link"  [routerLink]= "['especificaciones']">Especificaciones</a>
       </nav>
     </div>  
-    <div class="nombre">
-      <p>NOMBRE</p>
-    </div>
-      
-    <figure>
-        <img src="assets/img/BurgerQueen (1).png" alt="">
-     </figure>
-     <input type="text"/>
+
+    <button class= "exit" [routerLink]= "['home']" ></button>
 </div>
 
 
-
-
-
-<app-ticket></app-ticket>
 

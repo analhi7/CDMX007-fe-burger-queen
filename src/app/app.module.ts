@@ -8,9 +8,16 @@ import { HomeComponent } from './components/home/home.component';
 
 
 //Servicios
+import { BurguerServie } from './servicios/burguer.service'
 
 //Rutas
 import{ app_routing } from "./app.routes";
+import { DesyunosComponent } from './components/desyunos/desyunos.component';
+import { HamburguesasComponent } from './components/hamburguesas/hamburguesas.component';
+import { EspecificacionesComponent } from './components/especificaciones/especificaciones.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { NameComponent } from './components/name/name.component';
+
 
 
 @NgModule({
@@ -19,6 +26,12 @@ import{ app_routing } from "./app.routes";
     NavbarComponent,
     TicketComponent,
     HomeComponent,
+    DesyunosComponent,
+    HamburguesasComponent,
+    EspecificacionesComponent,
+    InicioComponent,
+    NameComponent,
+  
    
   ],
   imports: [
@@ -26,7 +39,9 @@ import{ app_routing } from "./app.routes";
     app_routing,
    
   ],
-  providers: [],
+  providers: [
+    BurguerServie
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

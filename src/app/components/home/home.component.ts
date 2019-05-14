@@ -14,7 +14,7 @@ export class HomeComponent  {
   }
 
     start(){
-      this.router.navigate(['/navbar'])
+      this.router.navigate(['/home'])
       
     }
   
