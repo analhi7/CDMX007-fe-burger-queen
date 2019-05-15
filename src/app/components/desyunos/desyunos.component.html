@@ -1,15 +1,9 @@
 <main>
 
-<section id="sandwich">
-<img src="assets/img/sandwuich.png">   
-</section>   
+<div *ngFor="let sandwich of desayuno ; let i = index">
+ <h2>{{ desayuno[i].nombre }}</h2>
+<img src="{{ desayuno[i].img }}">
 
-<section class="food-section">
-<img src="assets/img/sandwuich.png">   
-</section> 
-
-<section class="food-section">
-<img src="assets/img/sandwuich.png">   
-</section> 
+</div>
 
 </main>

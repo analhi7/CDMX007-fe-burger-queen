@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesayunoService, Desayuno } from '../../servicios/desayuno.service';
 
 @Component({
   selector: 'app-desyunos',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DesyunosComponent implements OnInit {
 
-  constructor() { }
+  desayuno: Desayuno [] = [];
+
+  constructor(
+    private _desayunoService:DesayunoService
+  ) { 
+    console.log("CONSTRUCTOR");
+  }
 
   ngOnInit() {
+  this.desayuno = this._desayunoService.getDesayuno();
+  console.log(this.desayuno)
   }
 
 }
