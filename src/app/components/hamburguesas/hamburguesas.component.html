@@ -1,7 +1,18 @@
-<p>
-  hamburguesas works!
-</p>
 
+<div>
+    <p>HAMBURGUESAS</p>
+</div>
+<main>
+   <div  *ngFor="let hamburguesa of hamburguesas ; let i = index">
+    <button class= "button">
+      <img src="{{ hamburguesas[i].img }}">
+      <p>{{ hamburguesas[i].tipo }}</p>
+    </button>
+  </div>
+</main>  
+
+<div>
 <button [routerLink]= "['extras']" >extras</button>
 <button [routerLink]= "['bebidas']" >bebidas</button>
 <button [routerLink]= "['guarniciones']" >guarniciones</button>
+</div>

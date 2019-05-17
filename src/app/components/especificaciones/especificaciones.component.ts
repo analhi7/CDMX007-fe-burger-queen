@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EspecificacionesService, Especificaciones } from '../../servicios/especificaciones.service';
 
 @Component({
   selector: 'app-especificaciones',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EspecificacionesComponent implements OnInit {
 
-  constructor() { }
+  especificaciones: Especificaciones[] = [];
+  constructor(
+    private _especificacionesService : EspecificacionesService
+  ) {
+    console.log("Constructor3");
+   }
 
   ngOnInit() {
+    this.especificaciones = this._especificacionesService.getEspecificaciones();
+  console.log(this.especificaciones)
   }
 
 }

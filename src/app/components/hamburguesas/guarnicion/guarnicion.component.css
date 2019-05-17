@@ -1,0 +1,24 @@
+main{
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top:-19px;
+   
+}
+
+.button{
+    background-color: #d9e3e6;
+    width: 117px;
+    height: 108px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
+    padding-top: 14px;
+    color: #acb8bf;
+}
+
+img{
+    margin-bottom: 14px;
+}

@@ -1,6 +1,11 @@
-<p>
-  bebidas works!
-</p>
+<main>
+    <div  *ngFor="let vasos of bebidas ; let i = index">
+     <button class= "button">
+       <img src="{{ bebidas[i].img }}">
+       <p>{{ bebidas[i].nombre }}</p>
+     </button>
+   </div>
+ </main>
 
 <button [routerLink]= "['/hamburguesas/extras']" >extras</button>
 <button [routerLink]= "['/hamburguesas/guarniciones']" >guarnicion</button>

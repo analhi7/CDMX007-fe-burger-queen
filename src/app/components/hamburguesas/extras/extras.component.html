@@ -1,6 +1,11 @@
-<p>
-  extras works!
-</p>
+<main>
+    <div  *ngFor="let otros2 of extras ; let i = index">
+     <button class= "button">
+       <img src="{{ extras[i].img }}">
+       <p>{{ extras[i].nombre }}</p>
+     </button>
+   </div>
+ </main>
 
 
 <button [routerLink]= "['/hamburguesas/bebidas']" >bebidas</button>

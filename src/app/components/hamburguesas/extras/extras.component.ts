@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ExtrasService, Extras } from '../../../servicios/extras.service';
 
 @Component({
   selector: 'app-extras',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExtrasComponent implements OnInit {
 
-  constructor() { }
+  extras : Extras [] = [];
+
+  constructor(
+    private _extrasService : ExtrasService
+  ) {
+    console.log("CONSTRUCTOR 4");
+   }
 
   ngOnInit() {
+    this.extras = this._extrasService.getExtras();
+    console.log(this.extras)
   }
 
 }

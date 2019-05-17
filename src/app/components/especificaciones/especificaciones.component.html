@@ -1,3 +1,9 @@
-<p>
-  especificaciones works!
-</p>
+<main>
+    <div *ngFor="let otros of especificaciones ; let i = index">
+      <button class= "button">
+        <img src="{{ especificaciones[i].img }}">
+        <p>{{ especificaciones[i].nombre }}</p>
+      </button>
+      
+    </div>
+  </main> 
