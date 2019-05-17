@@ -3,7 +3,9 @@ main{
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-between; 
-    margin-top:-19px;
+    margin-top:19px;
+    padding-left: 90px;
+    padding-right: 90px;
    
 }
 
@@ -21,4 +23,22 @@ main{
 
 img{
     margin-bottom: 14px;
+}
+
+.button-2{
+    background-color: rgba(0,0,0,0.0);
+    width: 70px;
+    height: 210px;
+    border: 0px;
+    padding-top: 14px;
+   
+}
+
+#btn-menu{
+    display:flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+   margin-top:145px;
+  
 }

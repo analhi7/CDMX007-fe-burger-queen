@@ -7,6 +7,15 @@
    </div>
  </main>
 
-<button [routerLink]= "['/hamburguesas/extras']" >extras</button>
-<button [routerLink]= "['/hamburguesas/bebidas']" >bebidas</button>
-<button [routerLink]= "['/hamburguesas']" >hamburguesas</button>
+
+ <div id="btn-menu">
+    <button class="button-2" [routerLink]= "['/hamburguesas/extras']">
+      <img src="assets/img/egg.png">
+    </button>
+    <button class="button-2" [routerLink]= "['/hamburguesas/bebidas']" >
+      <img src="assets/img/refresco.png">
+    </button>
+    <button class="button-2" [routerLink]="['/hamburguesas']">
+      <img src="assets/img/burger.png">
+    </button>
+  </div>

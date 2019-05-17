@@ -1,13 +1,21 @@
 <main>
-    <div  *ngFor="let otros2 of extras ; let i = index">
-     <button class= "button">
-       <img src="{{ extras[i].img }}">
-       <p>{{ extras[i].nombre }}</p>
-     </button>
-   </div>
- </main>
+  <div *ngFor="let otros2 of extras ; let i = index">
+    <button class="button">
+      <img src="{{ extras[i].img }}">
+      <p>{{ extras[i].nombre }}</p>
+    </button>
+  </div>
+</main>
 
 
-<button [routerLink]= "['/hamburguesas/bebidas']" >bebidas</button>
-<button [routerLink]= "['/hamburguesas/guarniciones']" >guarniciones</button>
-<button [routerLink]= "['/hamburguesas']" >hamburguesas</button>
+<div  id="btn-menu">
+  <button class="button-2" [routerLink]="['/hamburguesas/bebidas']">
+    <img src="assets/img/refresco.png">
+  </button>
+  <button class="button-2" [routerLink]="['/hamburguesas/guarniciones']">
+    <img src="assets/img/french-fries.png">
+  </button>
+  <button class="button-2" [routerLink]="['/hamburguesas']">
+    <img src="assets/img/burger.png">
+  </button>
+</div>

@@ -1,13 +1,26 @@
-#sandwich{
-    background-color: #d9e3e6;
-    height: 100px;
+main{
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top:-19px;
+   
 }
 
-.food-section{
-    width: 100px;
-    height: 100px;
+.button{
     background-color: #d9e3e6;
-   
+    width: max-content;
+    height: 108px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
+    padding-top: 14px;
+    color: #acb8bf;
+}
+
+img{
+    margin-bottom: 14px;
 }
 
 

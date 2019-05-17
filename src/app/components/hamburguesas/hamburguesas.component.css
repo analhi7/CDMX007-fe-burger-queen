@@ -22,3 +22,20 @@ main{
 img{
     margin-bottom: 14px;
 }
+
+.button-2{
+    background-color: rgba(0,0,0,0.0);
+    width: 70px;
+    height: 210px;
+    border: 0px;
+    padding-top: 14px;
+   
+}
+
+#btn-menu{
+    display:flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    padding-top: 6px;
+}

@@ -9,7 +9,7 @@ private bebidas:Bebidas []= [
     {
        nombre:"agua",
        precio:"$10",
-       img:"assets/img/french-fries-2.png",
+       img:"assets/img/agua.png",
        
     },
 

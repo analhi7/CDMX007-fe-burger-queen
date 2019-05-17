@@ -22,3 +22,17 @@ main{
 img{
     margin-bottom: 14px;
 }
+
+.add-remove{
+    background-color: rgba(0,0,0,0.0);
+    border: 0px;
+    margin-left:4px;
+   
+}
+
+#add{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 95px;
+}

@@ -17,7 +17,12 @@ p{
     display:flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
-    margin-left: 800px;
+    justify-content: flex-start;
+    margin-left: 792px;
     margin-top:20px;
+}
+
+img{
+    margin-left: 18px;
+    margin-top: -9px;
 }
