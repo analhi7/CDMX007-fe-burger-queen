@@ -3,9 +3,10 @@ main{
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-between; 
-    margin-top:19px;
+    margin-top: -29px;
     padding-left: 90px;
     padding-right: 90px;
+    
    
 }
 
@@ -18,7 +19,7 @@ main{
     margin-right: 10px;
     border: 0px;
     padding-top: 14px;
-    color: #acb8bf;
+    color: #707070;
 }
 
 img{
@@ -28,9 +29,10 @@ img{
 .button-2{
     background-color: rgba(0,0,0,0.0);
     width: 70px;
-    height: 210px;
+    height: 290px;
     border: 0px;
     padding-top: 14px;
+    
    
 }
 
@@ -39,6 +41,20 @@ img{
     align-content: flex-end;
     flex-wrap: wrap;
     justify-content: flex-end; 
-   margin-top:145px;
+    margin-top: 144px;
+    margin-right: 25px;
   
+}
+
+.title{
+    margin-top: -73px;
+    position: absolute;
+    margin-left: 20px;
+    color:#707070;
+   
+   
+}
+#ham{
+    color:#7dcff1;
+    font-size: 20px;
 }

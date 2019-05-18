@@ -1,11 +1,15 @@
+<div class="title">
+  <p id="ham">DESAYUNO</p>  
+</div>
+
 <main>
 
   <div *ngFor="let alimentos of desayuno ; let i = index">
-      <button class="button">
+      <button id = "{{desayuno[i].id}}" class="button">
           <img src="{{ desayuno[i].img }}">
-          <h2>{{ desayuno[i].nombre }}</h2>
+          <p>{{ desayuno[i].nombre }}</p>
         </button>
-        <p>{{ desayuno[i].precio}}</p>
+        <p class="price">{{ desayuno[i].precio}}</p>
   </div>
 </main> 
 

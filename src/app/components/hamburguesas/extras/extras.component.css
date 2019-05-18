@@ -3,7 +3,7 @@ main{
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-between; 
-    margin-top:19px;
+    margin-top: -29px;
     padding-left: 90px;
     padding-right: 90px;
    
@@ -18,7 +18,7 @@ main{
     margin-right: 10px;
     border: 0px;
     padding-top: 14px;
-    color: #acb8bf;
+    color: #707070;
 }
 
 img{
@@ -40,6 +40,19 @@ img{
     align-content: flex-end;
     flex-wrap: wrap;
     justify-content: flex-end; 
-    margin-top:-71px;
+    margin-top: -33px;
+    margin-right: 25px;
   
+}
+.title{
+    margin-top: -73px;
+    position: absolute;
+    margin-left: 20px;
+    color:#707070;
+   
+   
+}
+#ham{
+    color:#7dcff1;
+    font-size: 20px;
 }

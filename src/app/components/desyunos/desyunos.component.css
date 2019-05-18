@@ -11,12 +11,12 @@ main{
     background-color: #d9e3e6;
     width: max-content;
     height: 108px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border: 0px;
     padding-top: 14px;
-    color: #acb8bf;
+    color:#707070;
 }
 
 img{
@@ -24,4 +24,43 @@ img{
 }
 
 
+#sandwich{
+    width: 470px;
+    margin-left: 18px;
+}
 
+.price{
+    margin-left: 26px;
+    color:#707070;
+}
+
+#cafe{
+    width: 100px;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+#jugo{
+    width: 100px;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+#cafeLe{
+    width: 100px;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+.title{
+    margin-top: -73px;
+    position: absolute;
+    margin-left: 20px;
+    color:#707070;
+   
+   
+}
+#ham{
+    color:#7dcff1;
+    font-size: 20px;
+}
