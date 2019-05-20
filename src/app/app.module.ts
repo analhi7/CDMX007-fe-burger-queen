@@ -17,12 +17,13 @@ import { BebidasComponent } from './components/hamburguesas/bebidas/bebidas.comp
 
 
 //Servicios
-import { DesayunoService } from './servicios/desayuno.service'
-import { HamburguesasService } from './servicios/hamburguesas.service'
-import { EspecificacionesService } from './servicios/especificaciones.service'
-import { ExtrasService } from './servicios/extras.service'
-import { GuarnicionesService } from './servicios/guarniciones.service'
-import { BebidasService } from './servicios/bebidas.service'
+import { DesayunoService } from './servicios/desayuno.service';
+import { HamburguesasService } from './servicios/hamburguesas.service';
+import { EspecificacionesService } from './servicios/especificaciones.service';
+import { ExtrasService } from './servicios/extras.service';
+import { GuarnicionesService } from './servicios/guarniciones.service';
+import { BebidasService } from './servicios/bebidas.service';
+import { NombreService } from './servicios/nombre.service';
 
 //Rutas
 import{ app_routing } from "./app.routes";
@@ -59,7 +60,8 @@ import{ app_routing } from "./app.routes";
     EspecificacionesService,
     ExtrasService,
     GuarnicionesService,
-    BebidasService
+    BebidasService,
+    NombreService 
   ],
   bootstrap: [AppComponent]
 })
