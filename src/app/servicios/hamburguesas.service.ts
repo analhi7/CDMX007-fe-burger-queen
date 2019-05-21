@@ -50,7 +50,7 @@ private hamburguesas:Hamburguesas[]= [
 ]
 
 constructor( ){
-console.log("sirve el server2");
+
     }
 
 getHamburguesas():Hamburguesas[]{

@@ -9,16 +9,30 @@ import { ExtrasService, Extras } from '../../../servicios/extras.service';
 export class ExtrasComponent implements OnInit {
 
   extras : Extras [] = [];
+  component:object;
 
   constructor(
     private _extrasService : ExtrasService
   ) {
-    console.log("CONSTRUCTOR 4");
+    
    }
+
+
 
   ngOnInit() {
     this.extras = this._extrasService.getExtras();
-    console.log(this.extras)
+   
   }
+ 
+  public searchComponent(index){
+    this.extras.forEach(element => {
+      if(this.extras.indexOf(element)==index){
+        this.component=element;
+        console.log(this.component)
+      }
+      
+    });
+  }
+
 
 }

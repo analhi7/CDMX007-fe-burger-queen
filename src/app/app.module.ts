@@ -13,6 +13,7 @@ import { NameComponent } from './components/name/name.component';
 import { GuarnicionComponent } from './components/hamburguesas/guarnicion/guarnicion.component';
 import { ExtrasComponent } from './components/hamburguesas/extras/extras.component';
 import { BebidasComponent } from './components/hamburguesas/bebidas/bebidas.component';
+import { OrdenComponent } from './components/orden/orden.component';
 
 
 
@@ -24,9 +25,11 @@ import { ExtrasService } from './servicios/extras.service';
 import { GuarnicionesService } from './servicios/guarniciones.service';
 import { BebidasService } from './servicios/bebidas.service';
 import { NombreService } from './servicios/nombre.service';
+import { CuentaService } from './servicios/cuenta.service';
 
 //Rutas
 import{ app_routing } from "./app.routes";
+
 
 
 
@@ -46,6 +49,7 @@ import{ app_routing } from "./app.routes";
     GuarnicionComponent,
     ExtrasComponent,
     BebidasComponent,
+    OrdenComponent,
   
    
   ],
@@ -61,7 +65,8 @@ import{ app_routing } from "./app.routes";
     ExtrasService,
     GuarnicionesService,
     BebidasService,
-    NombreService 
+    NombreService,
+    CuentaService 
   ],
   bootstrap: [AppComponent]
 })

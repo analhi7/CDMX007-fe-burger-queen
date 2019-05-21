@@ -38,7 +38,7 @@ private especificaciones:Especificaciones[]= [
 ]
 
 constructor( ){
-console.log("sirve el server3");
+
     }
 
 getEspecificaciones():Especificaciones[]{

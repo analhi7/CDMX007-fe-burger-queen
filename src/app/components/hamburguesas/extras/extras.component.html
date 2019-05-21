@@ -4,7 +4,7 @@
 </div>
 
 <main>
-  <div *ngFor="let otros2 of extras ; let i = index">
+  <div *ngFor="let otros2 of extras ; let i = index" (click)="searchComponent(i)">
     <button class="button">
       <img src="{{ extras[i].img }}">
       <p>{{ extras[i].nombre }}</p>

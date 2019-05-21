@@ -2,7 +2,7 @@
   <p id="ham">ESPECIFICACIONES</p>  
 </div>
 <main>
-    <div *ngFor="let otros of especificaciones ; let i = index">
+    <div *ngFor="let otros of especificaciones ; let i = index" (click)="searchComponent(i)">
       <button class= "button">
         <img src="{{ especificaciones[i].img }}">
         <p>{{ especificaciones[i].nombre }}</p>

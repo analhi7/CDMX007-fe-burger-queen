@@ -13,12 +13,26 @@ export class HamburguesasComponent implements OnInit {
   constructor(
     private _hamburguesasService : HamburguesasService
     ) {
-      console.log("CONSTRUCTOR");
+
    }
+
+   component:object;
+
 
   ngOnInit() {
     this.hamburguesas = this._hamburguesasService.getHamburguesas();
-  console.log(this.hamburguesas)
   }
 
-}
+  public searchComponent(index){
+  this.hamburguesas.forEach(element => {
+  if(this.hamburguesas.indexOf(element)== index){
+ this.component= element;
+ console.log(this.component)
+  }
+  })
+  
+  }
+   
+  }
+
+

@@ -25,7 +25,7 @@ private extras:Extras[]= [
 ]
 
 constructor( ){
-console.log("sirve el server3");
+
     }
 
 getExtras():Extras[]{

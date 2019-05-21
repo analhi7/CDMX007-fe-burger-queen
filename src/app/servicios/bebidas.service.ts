@@ -25,7 +25,6 @@ private bebidas:Bebidas []= [
 ]
 
 constructor( ){
-console.log("sirve el server3");
     }
 
 getBebidas():Bebidas[]{

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GuarnicionesService, Guarniciones } from '../../../servicios/guarniciones.service';
+import { CuentaService } from '../../../servicios/cuenta.service';
+
 
 @Component({
   selector: 'app-guarnicion',
@@ -8,17 +10,29 @@ import { GuarnicionesService, Guarniciones } from '../../../servicios/guarnicion
 })
 export class GuarnicionComponent implements OnInit {
 
-  guarniciones : Guarniciones [] = [];
+  guarniciones :Guarniciones [] = [];
+  component:object;
 
   constructor(
-    private _guarnicionesService : GuarnicionesService
+    private _guarnicionesService : GuarnicionesService,
+    private _cuentaService : CuentaService,
   ) {
-    console.log("CONSTRUCTOR 4");
+    
    }
 
   ngOnInit() {
     this.guarniciones = this._guarnicionesService.getGuarniciones();
-    console.log(this.guarniciones)
+   
+  }
+
+  public searchComponent(index){
+    this.guarniciones.forEach(element => {
+      if(this.guarniciones.indexOf(element)==index){
+        this.component= element;
+        console.log( this._cuentaService.totalAccount(this.component))
+      }
+      
+    });
   }
 
 }

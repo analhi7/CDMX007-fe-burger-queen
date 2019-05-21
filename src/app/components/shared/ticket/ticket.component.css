@@ -13,14 +13,7 @@ p{
     padding-top: 20%;
 }
 
-.order-ok{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 792px;
-    margin-top:20px;
-}
+
 
 img{
     margin-left: 18px;

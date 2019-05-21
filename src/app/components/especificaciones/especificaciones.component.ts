@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EspecificacionesService, Especificaciones } from '../../servicios/especificaciones.service';
+import { ObjectOrientedRenderer3 } from '@angular/core/src/render3/interfaces/renderer';
 
 @Component({
   selector: 'app-especificaciones',
@@ -12,12 +13,29 @@ export class EspecificacionesComponent implements OnInit {
   constructor(
     private _especificacionesService : EspecificacionesService
   ) {
-    console.log("Constructor3");
    }
+
+
+  component:Object;
+
 
   ngOnInit() {
     this.especificaciones = this._especificacionesService.getEspecificaciones();
-  console.log(this.especificaciones)
   }
+
+
+public searchComponent(index){
+  this.especificaciones.forEach(element=>{
+    if(this.especificaciones.indexOf(element)== index){
+      this.component= element;
+      console.log(this.component)
+
+    }
+
+  })
+}
+
+
+
 
 }

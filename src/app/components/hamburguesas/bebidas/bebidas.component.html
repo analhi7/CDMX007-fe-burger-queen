@@ -5,7 +5,7 @@
 
 
 <main>
-  <div *ngFor="let vasos of bebidas ; let i = index">
+  <div *ngFor="let vasos of bebidas ; let i = index"  (click)="searchComponent(i)">
     <button class="button">
       <img src="{{ bebidas[i].img }}">
       <p>{{ bebidas[i].nombre }}</p>

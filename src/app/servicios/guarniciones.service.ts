@@ -25,7 +25,6 @@ private guarniciones:Guarniciones[]= [
 ]
 
 constructor( ){
-console.log("sirve el server3");
     }
 
 getGuarniciones():Guarniciones[]{

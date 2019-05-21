@@ -1,0 +1,36 @@
+.order-ok{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 792px;
+    margin-top:20px;
+}
+
+.modal-content{
+    width: 619px;
+    height: 581px
+}
+
+.modal-body{
+    background-color: #f8d554;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.fade{
+    background-color: #edf5f9;
+
+}
+
+div.modal-content{
+    top: 68px;
+    right: 151px;
+    width: 800px;
+    font-size: 2.5em;
+    color :#707070;
+}
+

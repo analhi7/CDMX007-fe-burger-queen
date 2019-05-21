@@ -36,7 +36,7 @@ private desayuno:Desayuno[]= [
 ]
 
 constructor( ){
-console.log("sirve el server");
+
     }
 
 getDesayuno():Desayuno[]{
