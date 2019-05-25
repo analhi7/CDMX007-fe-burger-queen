@@ -6,10 +6,12 @@
     width: 246px;
     box-shadow: 3px 3px 13px #666;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
 }
 
-p{
+#title{
     padding-top: 20%;
 }
 
@@ -18,4 +20,18 @@ p{
 img{
     margin-left: 18px;
     margin-top: -9px;
+}
+
+#price{
+ color: #f8d554;
+ margin-right:2px;
+}
+
+#product{
+    display:flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
 }

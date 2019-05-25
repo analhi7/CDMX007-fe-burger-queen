@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BebidasService, Bebidas } from '../../../servicios/bebidas.service';
+import { CuentaService } from '../../../servicios/cuenta.service';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class BebidasComponent implements OnInit {
  bebidas : Bebidas [] = [];
 
   constructor(
-    private _bebidasService : BebidasService
+    private _bebidasService : BebidasService,
+    private _cuentaService: CuentaService
   ) {
     console.log("CONSTRUCTOR 5");
    }
@@ -29,7 +31,7 @@ public searchComponent(index){
   this.bebidas.forEach(element => {
     if(this.bebidas.indexOf(element)==index){
       this.component=element;
-      console.log(this.component)
+      console.log(this._cuentaService.totalAccount(this.component));
     }
     
   });

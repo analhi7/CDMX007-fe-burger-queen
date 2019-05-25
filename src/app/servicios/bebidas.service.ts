@@ -7,17 +7,18 @@ export class BebidasService {
 
 private bebidas:Bebidas []= [
     {
-       nombre:"agua",
+       comida:"agua",
        precio:"$10",
        img:"assets/img/agua.png",
+       acuenta:15,
        
     },
 
     {
-       nombre:"refresco",
+       comida:"refresco",
        precio:"$15",
        img:"assets/img/beverage.png",
-       
+       acuenta:15,
      },
 
      
@@ -33,8 +34,9 @@ getBebidas():Bebidas[]{
 }
 
 export interface Bebidas{
-    nombre:string;
+    comida:string;
     precio:string;
     img:string;
+    acuenta:number;
     
 };

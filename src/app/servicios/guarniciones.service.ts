@@ -7,16 +7,20 @@ export class GuarnicionesService {
 
 private guarniciones:Guarniciones[]= [
     {
-       nombre:"papas fritas",
+        nombre:"papas fritas",
+       comida:"papas f",
        precio:"$15",
        img:"assets/img/french-fries-2.png",
+       acuenta:15,
        
     },
 
     {
-       nombre:"aros e cebolla",
+       nombre:"aros de cebolla",
+       comida:"aros c",
        precio:"$15",
        img:"assets/img/onion-rings.png",
+       acuenta:15,
        
      },
 
@@ -34,7 +38,9 @@ getGuarniciones():Guarniciones[]{
 
 export interface Guarniciones{
     nombre:string;
+    comida:string;
     precio:string;
     img:string;
+    acuenta:number;
     
 };

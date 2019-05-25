@@ -8,7 +8,7 @@
   <div *ngFor="let vasos of bebidas ; let i = index"  (click)="searchComponent(i)">
     <button class="button">
       <img src="{{ bebidas[i].img }}">
-      <p>{{ bebidas[i].nombre }}</p>
+      <p>{{ bebidas[i].comida }}</p>
     </button>
     <P>{{bebidas[i].precio}}</P>
   </div>

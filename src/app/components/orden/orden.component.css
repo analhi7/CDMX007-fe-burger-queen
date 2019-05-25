@@ -4,7 +4,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 792px;
-    margin-top:20px;
+    margin-top:8px;
 }
 
 .modal-content{
@@ -34,3 +34,6 @@ div.modal-content{
     color :#707070;
 }
 
+img{
+    margin-left: 8px;
+}

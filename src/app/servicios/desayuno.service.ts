@@ -6,31 +6,40 @@ export class DesayunoService {
 
 private desayuno:Desayuno[]= [
     {
-       id:"sandwich",
-       nombre:"sándwich de jamón con queso",
+        nombre:"sandwich de jamón con queso",
+        id:"sandwich",
+       comida:"sándwich",
        precio:"$35",
-       img:"assets/img/sandwuich.png"
+       img:"assets/img/sandwuich.png",
+       acuenta:35
     },
 
     {
-        id:"cafe",
         nombre:"café",
+        id:"cafe",
+        comida:"café",
         precio:"$20",
-        img:"assets/img/coffee.png"
+        img:"assets/img/coffee.png",
+        acuenta:20
+
      },
 
      {
-        id:"cafeLe",
         nombre:"café con leche",
+        id:"cafeLe",
+        comida:"café con l",
         precio:"$28",
-        img:"assets/img/coffee.png"
+        img:"assets/img/coffee.png",
+        acuenta:28
      },
 
      {
+        nombre:"jugos",
         id:"jugo", 
-        nombre:"jugo",
+        comida:"jugo",
         precio:"$28",
-        img:"assets/img/jugo.png"
+        img:"assets/img/jugo.png",
+        acuenta:28
      },
 
 ]
@@ -47,6 +56,8 @@ getDesayuno():Desayuno[]{
 export interface Desayuno{
     id:string;
     nombre:string;
+    comida:string;
     precio:string;
     img:string;
+    acuenta:number;
 };

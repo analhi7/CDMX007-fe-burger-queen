@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NombreService } from '../../../servicios/nombre.service';
+import { CuentaService } from '../../../servicios/cuenta.service';
 
 
 @Component({
@@ -9,9 +10,13 @@ import { NombreService } from '../../../servicios/nombre.service';
 })
 export class TicketComponent implements OnInit {
 
-  constructor( private nombreService : NombreService) { }
+  constructor( private nombreService : NombreService,
+    private _cuentaService: CuentaService) { }
 
-  ngOnInit() {
+  ngOnInit(
+
+  ) {
+    
   }
 
 }

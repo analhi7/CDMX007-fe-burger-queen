@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HamburguesasService, Hamburguesas } from '../../servicios/hamburguesas.service';
+import { CuentaService } from '../../servicios/cuenta.service';
 
 @Component({
   selector: 'app-hamburguesas',
@@ -9,14 +10,17 @@ import { HamburguesasService, Hamburguesas } from '../../servicios/hamburguesas.
 export class HamburguesasComponent implements OnInit {
    
   hamburguesas: Hamburguesas [] = [];
+  component:object;
 
   constructor(
-    private _hamburguesasService : HamburguesasService
+    private _hamburguesasService : HamburguesasService,
+    private _cuentaService: CuentaService
+
     ) {
 
    }
 
-   component:object;
+   
 
 
   ngOnInit() {
@@ -27,7 +31,7 @@ export class HamburguesasComponent implements OnInit {
   this.hamburguesas.forEach(element => {
   if(this.hamburguesas.indexOf(element)== index){
  this.component= element;
- console.log(this.component)
+console.log(this._cuentaService.totalAccount(this.component));
   }
   })
   
