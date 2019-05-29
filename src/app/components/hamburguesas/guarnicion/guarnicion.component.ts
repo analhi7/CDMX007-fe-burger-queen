@@ -29,7 +29,7 @@ export class GuarnicionComponent implements OnInit {
     this.guarniciones.forEach(element => {
       if(this.guarniciones.indexOf(element)==index){
         this.component= element;
-        console.log( this._cuentaService.totalAccount(this.component))
+        this._cuentaService.totalAccount(this.component);
       }
       
     });

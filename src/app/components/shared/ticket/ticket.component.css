@@ -13,6 +13,8 @@
 
 #title{
     padding-top: 20%;
+    margin-left: 40%;
+    font-size: 21px;
 }
 
 
@@ -22,7 +24,7 @@ img{
     margin-top: -9px;
 }
 
-#price{
+#number{
  color: #f8d554;
  margin-right:2px;
 }
@@ -34,4 +36,27 @@ img{
     justify-content: flex-end;
     flex-wrap: wrap;
 
+}
+
+#total{
+    margin-left: 92px;
+    margin-top: 580px;
+    position: fixed;
+    color: black;
+    font-size: 30px;
+    background-color: #d9e3e6;
+    width: 154px;
+    height: 73px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+span{
+    margin-top:10px;
+}
+
+
+.letras{
+    margin-left: 70px;
 }

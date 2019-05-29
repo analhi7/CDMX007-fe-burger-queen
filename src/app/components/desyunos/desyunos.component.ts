@@ -29,7 +29,7 @@ export class DesyunosComponent implements OnInit {
     this.desayuno.forEach(element=>{
       if(this.desayuno.indexOf(element)== index){
         this.component=element;
-        console.log(this._cuentaService.totalAccount(this.component));
+        this._cuentaService.totalAccount(this.component);
       }
 
     }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CuentaService} from "../../servicios/cuenta.service";
+
 
 @Component({
   selector: 'app-orden',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _cuentaService:CuentaService) { }
 
   ngOnInit() {
+
   }
 
+  // firebase(){
+  //   this._cuentaService.goFirebase();
+  // }
 }

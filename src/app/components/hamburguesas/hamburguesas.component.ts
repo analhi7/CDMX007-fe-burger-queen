@@ -31,7 +31,7 @@ export class HamburguesasComponent implements OnInit {
   this.hamburguesas.forEach(element => {
   if(this.hamburguesas.indexOf(element)== index){
  this.component= element;
-console.log(this._cuentaService.totalAccount(this.component));
+this._cuentaService.totalAccount(this.component);
   }
   })
   

@@ -17,21 +17,19 @@ export class BebidasComponent implements OnInit {
     private _bebidasService : BebidasService,
     private _cuentaService: CuentaService
   ) {
-    console.log("CONSTRUCTOR 5");
    }
 
 component:object;
 
   ngOnInit() {
     this.bebidas = this._bebidasService.getBebidas();
-    console.log(this.bebidas)
   }
 
 public searchComponent(index){
   this.bebidas.forEach(element => {
     if(this.bebidas.indexOf(element)==index){
       this.component=element;
-      console.log(this._cuentaService.totalAccount(this.component));
+      this._cuentaService.totalAccount(this.component);
     }
     
   });

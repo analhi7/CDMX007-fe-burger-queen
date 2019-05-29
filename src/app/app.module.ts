@@ -27,8 +27,17 @@ import { BebidasService } from './servicios/bebidas.service';
 import { NombreService } from './servicios/nombre.service';
 import { CuentaService } from './servicios/cuenta.service';
 
+// firebase
+import { environment } from '../environments/environment';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
+import { AngularFirestoreModule , AngularFirestore } from '@angular/fire/firestore';
+
+
 //Rutas
 import{ app_routing } from "./app.routes";
+
 
 
 
@@ -56,6 +65,10 @@ import{ app_routing } from "./app.routes";
   imports: [
     BrowserModule,
     app_routing,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    
+
    
   ],
   providers: [
@@ -66,7 +79,9 @@ import{ app_routing } from "./app.routes";
     GuarnicionesService,
     BebidasService,
     NombreService,
-    CuentaService 
+    CuentaService,
+    AngularFirestore,
+    AngularFirestoreModule  
   ],
   bootstrap: [AppComponent]
 })

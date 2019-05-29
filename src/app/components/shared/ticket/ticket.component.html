@@ -1,14 +1,13 @@
+<div class="ticket">
+  <p id="title">TICKET</p>
+  <p id="client">{{nombreService.nombre}}</p>
 
-<div class= "ticket">
-<p id="title">TICKET</p>  
-<p id="client">{{nombreService.nombre}}</p>
+  <div id="product" *ngFor="let producto of _cuentaService.foodChoosen; let i = index">
+    <p class ="letras"> {{producto.comida}}</p>
+    <p id="number">{{producto.precio}} </p>
 
-<div id="product" *ngFor="let producto of _cuentaService.foodChoosen; let i = index" >
-    <p> {{producto.comida}}</p> <p id="number" >{{producto.precio}} </p> 
-    
+  </div>
+  <div  id="total">
+    <span> ${{ _cuentaService.total}}.00 </span>
+  </div>
 </div>
-<span> {{ _cuentaService.total}} </span>
-
-
-
- 
